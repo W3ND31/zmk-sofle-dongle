@@ -67,7 +67,7 @@
             bindings = <
 &kp ESC     &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &kp PAGE_UP    &kp F6           &kp F7           &kp F8           &kp F9           &kp F10        &kp F11
 &trans      &trans           &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &kp PAGE_DOWN  &kp KP_MULTIPLY  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS   &kp F12
-&trans      &trans           &trans          &trans           &trans           &mkp MB5           &kp HOME       &kp KP_DIVIDE    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS    &kp RIGHT_BRACKET
+&trans      &trans           &trans          &trans           &trans           &mkp MB5           &kp HOME       &kp KP_DIVIDE    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS    &trans
 &trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &kp END        &trans           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp BACKSLASH  &trans
 &kp C_MUTE  &trans           &trans          &trans           &mo 3            &trans             &kp KP_NLCK    &trans           &mo 3            &kp KP_NUMBER_0  &kp KP_DOT       &kp KP_ENTER
             >;
@@ -79,11 +79,11 @@
 
         upper {
             bindings = <
-&trans  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp F6  &kp F7    &kp F8      &kp F9     &kp EQUAL    &kp LS(DEL)
-&trans  &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &trans  &trans    &kp UP      &kp F12    &kp UNDER    &kp DEL
-&trans  &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &trans  &kp LEFT  &kp DOWN    &kp RIGHT  &kp LBRC     &kp RBRC
-&trans  &sys_reset    &trans          &bootloader   &trans        &trans          &mmv MOVE_RIGHT  &trans  &trans    &sys_reset  &soft_off  &bootloader  &trans
-&trans  &trans        &trans          &trans        &mo 3         &trans          &mkp LCLK        &trans  &mo 3     &trans      &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &mmv MOVE_UP     &trans  &trans    &trans      &trans     &kp EQUAL &kp LS(DEL)
+&trans  &trans  &trans  &trans  &trans  &trans  &mmv MOVE_DOWN   &trans  &trans    &kp UP      &trans     &trans    &kp DEL
+&trans  &trans  &trans  &trans  &trans  &trans  &mmv MOVE_LEFT   &trans  &kp LEFT  &kp DOWN    &kp RIGHT  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &mmv MOVE_RIGHT  &trans  &trans    &trans      &trans     &trans    &trans
+&trans  &trans  &trans  &trans  &mo 3   &trans  &mkp LCLK        &trans  &mo 3     &trans      &trans     &trans
             >;
 
             display-name = "UPPER";
@@ -93,11 +93,11 @@
         extra {
             display-name = "EXTRA";
             bindings = <
-&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp F6  &kp F7    &kp F8      &kp F9     &kp F10      &trans
-&trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &trans  &trans    &kp UP      &kp F12    &kp UNDER    &kp PLUS
-&trans     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &trans  &kp LEFT  &kp DOWN    &kp RIGHT  &kp LBRC     &kp RBRC
-&trans     &sys_reset    &trans          &bootloader   &trans        &trans          &mmv MOVE_RIGHT  &trans  &trans    &sys_reset  &soft_off  &bootloader  &trans
-&trans     &trans        &trans          &trans        &mo 3         &trans          &mkp LCLK        &trans  &mo 3     &trans      &trans     &trans
+&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &trans    &trans  &trans  &trans  &trans
+&trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &trans    &trans  &trans  &trans  &trans
+&trans     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &trans    &trans  &trans  &trans  &trans
+&trans     &sys_reset    &trans          &bootloader   &trans        &trans          &mmv MOVE_RIGHT  &trans    &trans  &trans  &trans  &trans
+&trans     &trans        &trans          &trans        &mo 3         &trans          &mkp LCLK        &trans    &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
