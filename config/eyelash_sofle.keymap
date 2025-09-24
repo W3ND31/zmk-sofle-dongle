@@ -61,6 +61,7 @@
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
             display-name = "ALPHA";
+            label = "ALPHA";
         };
 
         lower {
@@ -72,8 +73,8 @@
 &kp C_MUTE  &trans           &trans          &trans           &mo 3            &trans             &kp KP_NLCK    &trans           &mo 3            &kp KP_NUMBER_0  &kp KP_DOT       &kp KP_ENTER
             >;
 
+            sensor-bindings = <&inc_dec_kp C_NEXT C_PREVIOUS>
             display-name = "LOWER";
-            sensor-bindings = <&scroll_encoder>;
             label = "LOWER";
         };
 
@@ -86,12 +87,12 @@
 &trans  &trans  &trans  &trans  &mo 3   &trans    &mkp LCLK        &trans  &mo 3     &trans    &trans     &trans
             >;
 
-            display-name = "UPPER";
             sensor-bindings = <&inc_dec_kp C_NEXT C_PREVIOUS>;
+            display-name = "UPPER";
+            label = "UPPER";
         };
 
         extra {
-            display-name = "EXTRA";
             bindings = <
 &kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &trans  &trans  &trans  &trans  &trans  &trans
 &trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &trans  &trans  &trans  &trans  &trans  &trans
@@ -101,6 +102,8 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
+            display-name = "EXTRA";
+            label = "EXTRA";
         };
     };
 };
