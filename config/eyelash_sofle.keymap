@@ -73,7 +73,7 @@
 &kp C_MUTE  &trans           &trans          &trans           &mo 3            &trans             &kp KP_NLCK    &trans           &mo 3            &kp KP_NUMBER_0  &kp KP_DOT       &kp KP_ENTER
             >;
 
-            sensor-bindings = <&inc_dec_kp C_NEXT C_PREVIOUS>
+            sensor-bindings = <&inc_dec_kp C_NEXT C_PREVIOUS>;
             display-name = "LOWER";
             label = "LOWER";
         };
