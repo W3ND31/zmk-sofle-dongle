@@ -80,10 +80,10 @@
 
         upper {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_UP     &trans  &trans    &trans    &trans     &kp EQUAL  &kp LS(DEL)
-&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_DOWN   &trans  &trans    &kp UP    &kp LBKT   &kp RBKT   &kp DEL
-&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_LEFT   &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_RIGHT  &trans  &trans    &trans    &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_UP     &trans  &trans    &trans    &trans     &kp EQUAL      &kp LS(DEL)
+&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_DOWN   &trans  &trans    &kp UP    &kp LBKT   &kp RBKT       &kp DEL
+&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_LEFT   &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_RIGHT  &trans  &trans    &trans    &trans     &kp BACKSLASH  &trans
 &trans  &trans  &trans  &trans  &mo 3   &trans    &mkp LCLK        &trans  &mo 3     &trans    &trans     &trans
             >;
 
